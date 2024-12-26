@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8e69f25f7b0d476da834aca915b4a205" Name="Diagram1">
+        <EntityTypeShape EntityType="TournamentDB_420_PankovModel.AccessLevel" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_420_PankovModel.Category" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_420_PankovModel.Matches" Width="1.5" PointX="7.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_420_PankovModel.Organizers" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_420_PankovModel.Participants" Width="1.5" PointX="9.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_420_PankovModel.Registrations" Width="1.5" PointX="12" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_420_PankovModel.RoleInTeam" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_420_PankovModel.Spectators" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_420_PankovModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_420_PankovModel.Tournaments" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_420_PankovModel.TournamentStandings" Width="1.5" PointX="15" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_420_PankovModel.TournamentStatistics" Width="1.5" PointX="12" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_420_PankovModel.RegStatus" Width="1.5" PointX="14.25" PointY="8.125" IsExpanded="true" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.FK_Organizers_AccessLevel" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.FK_Tournaments_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.FK_Matches_Tournaments" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.FK_Matches_Winner" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.FK_Tournaments_Organizers" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.FK_Participants_RoleInTeam" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.FK_Registrations_Participant" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.FK_TS_BestPlayer" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.FK_TS_Participants" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.FK_Registrations_Tournament" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.FK_RegStatus_Registrations" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.FK_TS_Tournaments" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.FK_TS_Tournaments_Stats" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.MatchParticipants" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_420_PankovModel.SpectatorTournaments" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
