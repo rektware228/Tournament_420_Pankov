@@ -12,24 +12,22 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Tournament_420_Pankov.Pages;
 
-namespace Tournament_420_Pankov
+namespace Tournament_420_Pankov.Pages.PagesForOrganiz
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для MainPageOrganizers.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainPageOrganizers : Page
     {
-        public MainWindow()
+        public MainPageOrganizers()
         {
             InitializeComponent();
-            MainFrame.Navigate(new LoginPage());
         }
 
-        private void BBack_Click(object sender, RoutedEventArgs e)
+        private void BGoToLogin_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new LoginPage());
+
         }
     }
 }

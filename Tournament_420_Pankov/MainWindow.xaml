@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tournament_420_Pankov"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" MinHeight="450" MinWidth="800">
     <Grid>
-        
+        <Button
+            x:Name="BBack"
+            Click="BBack_Click"
+            />
+        <Frame x:Name="MainFrame"
+               NavigationUIVisibility="Hidden"/>
+
     </Grid>
 </Window>
