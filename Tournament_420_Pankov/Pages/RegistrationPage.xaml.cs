@@ -40,7 +40,7 @@ namespace Tournament_420_Pankov.Pages
                                     MessageBoxImage.Warning);
                     return;
                 }
-
+                //
                 if (!int.TryParse(TBAccessLevelID.Text.Trim(), out int levelID))
                 {
                     MessageBox.Show("Уровень доступа должен быть числом 1 или 2.",
