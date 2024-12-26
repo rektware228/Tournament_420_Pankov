@@ -9,6 +9,23 @@
       Title="MainPageUsers">
 
     <Grid>
-        <TextBlock Text="PAGEuser"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button
+            HorizontalAlignment="Left" Width="180" x:Name="BGoToLogin"
+                Content="Login Page"
+                Click="BGoToLogin_Click"/>
+
+            <Button
+HorizontalAlignment="Left" Width="180" x:Name="BViewAllTournaments"
+    Content="Посмотреть все турниры"
+    Click="BViewAllTournaments_Click"/>
+
+            <Button
+HorizontalAlignment="Left" Width="180" x:Name="BGoToRates"
+    Content="Рейтинги"
+    Click="BGoToRates_Click"/>
+
+            
+        </StackPanel>
     </Grid>
 </Page>

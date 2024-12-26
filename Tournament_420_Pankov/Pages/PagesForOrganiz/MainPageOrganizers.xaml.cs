@@ -28,7 +28,7 @@ namespace Tournament_420_Pankov.Pages.PagesForOrganiz
 
         private void BGoToLogin_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.GoBack();
+            NavigationService.Navigate(new LoginPage());
         }
 
         private void BGoToCreateTour_Click(object sender, RoutedEventArgs e)
@@ -48,7 +48,7 @@ namespace Tournament_420_Pankov.Pages.PagesForOrganiz
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            CBCategory.ItemsSource = App.DB.Category.ToList();
+         
         }
     }
 }

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Tournament_420_Pankov.Pages.PagesForOrganiz;
 
 namespace Tournament_420_Pankov.Pages.PagesForUsers
 {
@@ -23,6 +24,22 @@ namespace Tournament_420_Pankov.Pages.PagesForUsers
         public MainPageUsers()
         {
             InitializeComponent();
+        }
+
+        private void BViewAllTournaments_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ViewAllTournamentsPage());
+        }
+
+        private void BGoToRates_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new RatesPage());
+        }
+
+        private void BGoToLogin_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new LoginPage());
+
         }
     }
 }

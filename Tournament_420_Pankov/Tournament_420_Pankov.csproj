@@ -104,6 +104,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PagesForUsers\RatesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesForUsers\ViewAllTournamentsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\RegistrationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -184,6 +192,12 @@
     </Compile>
     <Compile Include="Pages\PagesForUsers\MainPageUsers.xaml.cs">
       <DependentUpon>MainPageUsers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesForUsers\RatesPage.xaml.cs">
+      <DependentUpon>RatesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesForUsers\ViewAllTournamentsPage.xaml.cs">
+      <DependentUpon>ViewAllTournamentsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RegistrationPage.xaml.cs">
       <DependentUpon>RegistrationPage.xaml</DependentUpon>
