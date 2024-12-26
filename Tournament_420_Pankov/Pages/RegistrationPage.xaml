@@ -9,6 +9,51 @@
       Title="RegistrationPage">
 
     <Grid>
-        
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="20">
+                <TextBlock Text="Регистрация нового организатора" 
+                           FontSize="18" FontWeight="Bold" 
+                           Margin="0,0,0,10"/>
+
+                <TextBlock Text="Имя/Название:" FontWeight="Bold"/>
+                <TextBox x:Name="TBName"
+                         Width="300"
+                         Margin="0,0,0,10"/>
+
+                <TextBlock Text="Контактная информация:" FontWeight="Bold"/>
+                <TextBox x:Name="TBContact"
+                         Width="300"
+                         Margin="0,0,0,10"/>
+
+                <TextBlock Text="Логин:" FontWeight="Bold"/>
+                <TextBox x:Name="TBLogin"
+                         Width="200"
+                         Margin="0,0,0,10"/>
+
+                <TextBlock Text="Пароль:" FontWeight="Bold"/>
+                <PasswordBox x:Name="TBPassword"
+                             Width="200"
+                             Margin="0,0,0,10"/>
+
+                
+                <TextBlock Text="Уровень доступа (1=Admin, 2=Moderator):" FontWeight="Bold"/>
+                <TextBox x:Name="TBAccessLevelID"
+                         Width="50"
+                         Margin="0,0,0,10"/>
+
+               
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Button x:Name="BReg"
+                            Content="Зарегистрировать"
+                            Width="150"
+                            Click="BReg_Click"
+                            Margin="0,0,20,0"/>
+                    <Button x:Name="BBack"
+                            Content="Назад"
+                            Width="100"
+                            Click="BBack_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>
