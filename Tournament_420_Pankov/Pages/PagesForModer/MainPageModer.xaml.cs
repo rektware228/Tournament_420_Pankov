@@ -24,5 +24,17 @@ namespace Tournament_420_Pankov.Pages.PagesForModer
         {
             InitializeComponent();
         }
+
+        private void BGoToCreateResultTour_Click(object sender, RoutedEventArgs e)
+        {
+           // NavigationService.Navigate(new GoToCreateResultTourPage());
+
+        }
+
+        private void BGoToLogin_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new LoginPage());
+
+        }
     }
 }

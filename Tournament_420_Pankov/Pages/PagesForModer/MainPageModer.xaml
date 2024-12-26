@@ -9,6 +9,18 @@
       Title="MainPageModer">
 
     <Grid>
-        <TextBlock Text="PAGEMODERATOR"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button
+            HorizontalAlignment="Left" Width="180" x:Name="BGoToLogin"
+                Content="Login Page"
+                Click="BGoToLogin_Click"/>
+
+            <Button
+HorizontalAlignment="Left" Width="180" x:Name="BGoToCreateResultTour"
+    Content="Внесение результата матча"
+    Click="BGoToCreateResultTour_Click"/>
+
+
+        </StackPanel>
     </Grid>
 </Page>

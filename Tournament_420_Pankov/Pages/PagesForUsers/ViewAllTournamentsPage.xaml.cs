@@ -26,7 +26,7 @@ namespace Tournament_420_Pankov.Pages.PagesForUsers
 
         public ViewAllTournamentsPage()
         {
-            InitializeComponent(); // ОБЯЗАТЕЛЬНО: иначе DG_Tournaments будет null
+            InitializeComponent();
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -39,11 +39,12 @@ namespace Tournament_420_Pankov.Pages.PagesForUsers
 
         private void CBFilter_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (CBFilter.SelectedItem is ComboBoxItem selectedItem)
-            {
-                string filterTag = selectedItem.Tag?.ToString();
-                DG_Tournaments.ItemsSource = FilterTournaments(filterTag);
-            }
+            //if (CBFilter.SelectedItem is ComboBoxItem selectedItem)
+            //{
+            //    string filterTag = selectedItem.Tag?.ToString();
+            //    DG_Tournaments.ItemsSource = FilterTournaments(filterTag);
+
+            //}
         }
 
         // Пример фильтра по дате начала/окончания
@@ -77,21 +78,6 @@ namespace Tournament_420_Pankov.Pages.PagesForUsers
             return _allTournaments;
         }
 
-        private void BDetails_Click(object sender, RoutedEventArgs e)
-        {
-            // Получаем выбранную строку
-            var selectedTournament = DG_Tournaments.SelectedItem as Tournaments;
-            if (selectedTournament == null)
-            {
-                MessageBox.Show("Выберите турнир для подробной информации",
-                                "Информация",
-                                MessageBoxButton.OK,
-                                MessageBoxImage.Information);
-                return;
-            }
 
-            // Переход на страницу детального просмотра (пример, создайте сами TournamentDetailsPage)
-          //  NavigationService.Navigate(new TournamentDetailsPage(selectedTournament.TournamentID));
-        }
     }
 }

@@ -39,11 +39,7 @@
                 </DataGrid.Columns>
             </DataGrid>
 
-            <Button x:Name="BDetails"
-                    Content="Подробнее о выбранном турнире"
-                    Width="200"
-                    HorizontalAlignment="Left"
-                    Click="BDetails_Click"/>
+            
         </StackPanel>
     </Grid>
 </Page>
