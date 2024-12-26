@@ -6,17 +6,30 @@
       xmlns:local="clr-namespace:Tournament_420_Pankov.Pages.PagesForOrganiz"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+      Loaded="Page_Loaded"
       Title="MainPageOrganizers">
 
     <Grid>
-        <StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button
-                HorizontalAlignment="Left" Width="120" x:Name="BGoToLogin"
+                HorizontalAlignment="Left" Width="180" x:Name="BGoToLogin"
                     Content="Login Page"
-                    Click="BGoToLogin_Click"
-    />
-            <TextBlock Text="PAGEORGAN"/>
+                    Click="BGoToLogin_Click"/>
+
+            <Button
+    HorizontalAlignment="Left" Width="180" x:Name="BGoToCreateTour"
+        Content="Создать турнир"
+        Click="BGoToCreateTour_Click"/>
+
+            <Button
+    HorizontalAlignment="Left" Width="180" x:Name="BGoToparticipantManagement"
+        Content="Управление участниками"
+        Click="BGoToparticipantManagement_Click"/>
+
+            <Button
+    HorizontalAlignment="Left" Width="180" x:Name="BenteringResults"
+        Content="Внесение результатов"
+        Click="BenteringResults_Click"/>
         </StackPanel>
-        
     </Grid>
 </Page>

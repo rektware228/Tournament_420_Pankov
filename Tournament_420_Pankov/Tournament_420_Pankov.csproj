@@ -84,7 +84,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PagesForOrganiz\BenteringResultsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesForOrganiz\CreateTourPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PagesForOrganiz\MainPageOrganizers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesForOrganiz\ParticipantManagementPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -158,8 +170,17 @@
     <Compile Include="Pages\PagesForModer\MainPageModer.xaml.cs">
       <DependentUpon>MainPageModer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\PagesForOrganiz\BenteringResultsPage.xaml.cs">
+      <DependentUpon>BenteringResultsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesForOrganiz\CreateTourPage.xaml.cs">
+      <DependentUpon>CreateTourPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PagesForOrganiz\MainPageOrganizers.xaml.cs">
       <DependentUpon>MainPageOrganizers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesForOrganiz\ParticipantManagementPage.xaml.cs">
+      <DependentUpon>ParticipantManagementPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PagesForUsers\MainPageUsers.xaml.cs">
       <DependentUpon>MainPageUsers.xaml</DependentUpon>

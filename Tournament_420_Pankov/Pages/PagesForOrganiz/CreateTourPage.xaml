@@ -1,0 +1,103 @@
+﻿<Page x:Class="Tournament_420_Pankov.Pages.PagesForOrganiz.CreateTourPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tournament_420_Pankov.Pages.PagesForOrganiz"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="CreateTourPage">
+
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="20">
+
+               
+                <TextBlock Text="Наименование (Title):" FontWeight="Bold" Margin="0,10,0,0"/>
+                <TextBox Text="{Binding Title}" />
+
+               
+                <TextBlock Text="Категория (Category):" FontWeight="Bold" Margin="0,10,0,0"/>
+                <ComboBox x:Name="CBCategory"
+                          DisplayMemberPath="Name"
+                          SelectedValuePath="CategoryID"
+                          SelectedValue="{Binding CategoryID}"
+                          Width="200"/>
+
+               
+                <TextBlock Text="Формат (Format):" FontWeight="Bold" Margin="0,10,0,0"/>
+                <ComboBox x:Name="CBFormat"
+                          Width="100"
+                          SelectedItem="{Binding Format}">
+                  
+                    <ComboBoxItem Content="1x1" />
+                    <ComboBoxItem Content="5x5" />
+                </ComboBox>
+
+              
+                <TextBlock Text="Текущая стадия (CurrentStage):" FontWeight="Bold" Margin="0,10,0,0"/>
+                <ComboBox x:Name="CBStage"
+                          Width="200"
+                          SelectedItem="{Binding CurrentStage}">
+               
+                    <ComboBoxItem Content="Регистрация" />
+                    <ComboBoxItem Content="Групповой этап" />
+                    <ComboBoxItem Content="Четверть" />
+                    <ComboBoxItem Content="Полуфинал" />
+                    <ComboBoxItem Content="Плейофф" />
+                    <ComboBoxItem Content="ФИНАЛ" />
+                </ComboBox>
+
+            
+                <TextBlock Text="Дата начала (StartDate):" FontWeight="Bold" Margin="0,10,0,0"/>
+                <DatePicker SelectedDate="{Binding StartDate}" />
+
+                
+                <TextBlock Text="Дата окончания (EndDate):" FontWeight="Bold" Margin="0,10,0,0"/>
+                <DatePicker SelectedDate="{Binding EndDate}" />
+
+                
+                <TextBlock Text="Призовой фонд (PrizePool):" FontWeight="Bold" Margin="0,10,0,0"/>
+                <TextBox x:Name="TBPrizePool"
+                         Text="{Binding PrizePool}"
+                         Width="150"
+                         PreviewTextInput="DigitsOnly_PreviewTextInput"/>
+
+           
+                <TextBlock Text="Мин. рейтинг (MinRequiredRank):" FontWeight="Bold" Margin="0,10,0,0"/>
+                <TextBox x:Name="TBMinRank"
+                         Text="{Binding MinRequiredRank}"
+                         Width="150"
+                         PreviewTextInput="DigitsOnly_PreviewTextInput"/>
+
+              
+                <TextBlock Text="Региональные ограничения (RegionConstraints):" FontWeight="Bold" Margin="0,10,0,0"/>
+                <TextBox Text="{Binding RegionConstraints}" Width="200"/>
+
+                
+                <TextBlock Text="Спонсор (SponsorInfo):" FontWeight="Bold" Margin="0,10,0,0"/>
+                <TextBox Text="{Binding SponsorInfo}" Width="200"/>
+
+               
+                <TextBlock Text="Организатор (Organizer):" FontWeight="Bold" Margin="0,10,0,0"/>
+                <ComboBox x:Name="CBOrganizer"
+                          DisplayMemberPath="OrganizerName"
+                          SelectedValuePath="OrganizerID"
+                          SelectedValue="{Binding OrganizerID}"
+                          Width="200"/>
+
+                
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Button x:Name="BSave"
+                            Content="Сохранить"
+                            Click="BSave_Click"
+                            Margin="0,0,20,0"/>
+                    <Button x:Name="BBack"
+                            Content="Назад"
+                            Click="BBack_Click"/>
+                </StackPanel>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

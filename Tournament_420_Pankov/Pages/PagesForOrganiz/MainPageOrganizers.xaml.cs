@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Tournament_420_Pankov.Models;
 
 namespace Tournament_420_Pankov.Pages.PagesForOrganiz
 {
@@ -27,7 +28,27 @@ namespace Tournament_420_Pankov.Pages.PagesForOrganiz
 
         private void BGoToLogin_Click(object sender, RoutedEventArgs e)
         {
+            NavigationService.GoBack();
+        }
 
+        private void BGoToCreateTour_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new CreateTourPage());
+        }
+
+        private void BGoToparticipantManagement_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ParticipantManagementPage());
+        }
+
+        private void BenteringResults_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new BenteringResultsPage());
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            CBCategory.ItemsSource = App.DB.Category.ToList();
         }
     }
 }
